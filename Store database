@@ -1,0 +1,26 @@
+Create a pet store database
+
+CREATE TABLE store (id integer primary key, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO store VALUES (1, "dogs", 10, 20);
+INSERT INTO store VALUES (2, "cats", 15, 18);
+INSERT INTO store VALUES (3, "hamsters", 5, 10);
+INSERT INTO store VALUES (4, "rabbits", 10, 14);
+INSERT INTO store VALUES (5, "guinea pigs", 7, 12);
+INSERT INTO store VALUES (6, "snakes", 3, 8);
+INSERT INTO store VALUES (7, "fish", 20, 5);
+INSERT INTO store VALUES (8, "mice", 13, 7);
+INSERT INTO store VALUES (9, "birds", 4, 8);
+INSERT INTO store VALUES (10, "turtles", 2, 13);
+INSERT INTO store VALUES (11, "rats", 1, 6);
+INSERT INTO store VALUES (12, "axolotls", 2, 19);
+INSERT INTO store VALUES (13, "dragons", 5, 17);
+INSERT INTO store VALUES (14, "chinchillas", 6, 25);
+INSERT INTO store VALUES (15, "tortoise", 7, 21);
+SELECT * FROM store 
+
+Display the database ordered by price
+ORDER BY price asc; 
+
+What is the total numer of animals in the store
+SELECT * FROM store WHERE quantity >=10;
+SELECT SUM(quantity) FROM store; 
